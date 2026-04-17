@@ -125,7 +125,7 @@ python create_mini.py \
 cd ..
 ```
 
-The converter produces a `vkitti360-trainval` split (~300 scenes, ~68K samples) compatible with the nuScenes devkit.
+The current converter produces a `vkitti360-trainval` split (~300 scenes, ~68K samples) compatible with the nuScenes devkit.
 
 ### 3. (Optional) Rectify fisheye images
 
@@ -151,7 +151,7 @@ cd ..
 
 ## Training
 
-All models are trained for 24 epochs with a batch size of 8 using AdamW with cosine annealing. Distributed training across multiple NVIDIA A5000 GPUs is recommended.
+All models are trained for 24/20 epochs with a batch size of 2 using AdamW with cosine annealing. Distributed training across multiple NVIDIA GPUs is recommended.
 
 ### FishBEVDet
 
